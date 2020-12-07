@@ -1,0 +1,22 @@
+# This is a basic workflow that is manually triggered
+
+name: Test, Build, Deploy Android
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  push:
+    branches: 
+      - master
+  pull_request:
+    branches: 
+      - master
+  workflow_dispatch:
+  
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    name: test on linux
+    runs_on: ubuntu_latest
+    
