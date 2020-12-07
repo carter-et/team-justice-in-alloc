@@ -25,5 +25,4 @@ jobs:
            # The Flutter build release channel
           channel: dev
       - run: flutter pub get
-      - run: flutter  analyze
-      - run: flutter test --coverage
+      - run: flutter test 
